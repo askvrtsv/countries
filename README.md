@@ -1,4 +1,4 @@
-# List of countries with currency codes extracted from Wikipedia
+# List of countries from Wikipedia
 
 ## Scrape
 
