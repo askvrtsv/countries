@@ -2,7 +2,7 @@ import re
 
 import scrapy
 
-from scrapyproject.items import CountryItem
+from countries.items import CountryItem
 
 
 class CountrySpider(scrapy.Spider):

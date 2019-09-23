@@ -1,4 +1,4 @@
-BOT_NAME = 'scrapyproject'
+BOT_NAME = 'countries'
 
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 # AUTOTHROTTLE_ENABLED = True
@@ -24,32 +24,32 @@ DUPEFILTER_DEBUG = True
 DOWNLOAD_DELAY = 1
 
 # DOWNLOADER_MIDDLEWARES = {
-#    'scrapyproject.middlewares.ProjectDownloaderMiddleware': 543,
+#    'countries.middlewares.ProjectDownloaderMiddleware': 543,
 # }
 
 EXTENSIONS = {
 }
 
 HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 0
+HTTPCACHE_EXPIRATION_SECS = 60 * 60 * 24
 HTTPCACHE_DIR = 'httpcache'
 HTTPCACHE_IGNORE_HTTP_CODES = [401, 403, 500, 503]
 HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 HTTPCACHE_GZIP = False
 
 # ITEM_PIPELINES = {
-#    'scrapyproject.pipelines.ProjectPipeline': 300,
+#    'countries.pipelines.ProjectPipeline': 300,
 # }
 
-NEWSPIDER_MODULE = 'scrapyproject.spiders'
+NEWSPIDER_MODULE = 'countries.spiders'
 
 ROBOTSTXT_OBEY = False
 
 # SPIDER_MIDDLEWARES = {
-#    'scrapyproject.middlewares.ProjectSpiderMiddleware': 543,
+#    'countries.middlewares.ProjectSpiderMiddleware': 543,
 # }
 
-SPIDER_MODULES = ['scrapyproject.spiders']
+SPIDER_MODULES = ['countries.spiders']
 
 TELNETCONSOLE_ENABLED = False
 TELNETCONSOLE_PORT = [6023]
